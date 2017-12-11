@@ -1,0 +1,10 @@
+---
+- name: Install kvm and dependencies
+  package:
+    name: "{{ item }}"
+  with_items:
+    - qemu-kvm
+    - libvirt-bin
+    - virtinst
+    - bridge-utils
+    - cpu-checker
